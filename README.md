@@ -2,6 +2,4 @@
 
 ## Reset Your Project
 
-## Adding People
-
-## Removing People
+## Search for People
