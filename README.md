@@ -1,9 +1,13 @@
-# Week 1
+# Week 2
 
-## Installing Node
+## Reset Your Project
 
-## Clone and Install
+## Array Functions
 
-## Starting The Project
+- Array.map
+- Array.filter
+- Array.find
 
-## Hello World
+## Printing an Array in JSX
+
+## State in React, constuctor method
