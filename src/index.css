@@ -3,6 +3,11 @@ body {
   padding: 10px;
   font-family: sans-serif;
 }
+
+.search {
+  margin-bottom: 20px;
+}
+
 .people {
   list-style: none;
   margin: 0;

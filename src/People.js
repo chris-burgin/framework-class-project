@@ -1,12 +1,14 @@
 import React, { Component, Fragment } from "react";
 import Person from "./Person";
 import PeopleAdd from "./PeopleAdd";
+import PeopleSearch from "./PeopleSearch";
 
 class People extends Component {
   constructor() {
     super();
 
     this.state = {
+      searchString: "",
       people: [
         { id: "1", name: "Sally W.", age: 23 },
         { id: "2", name: "Rick S.", age: 30 },
@@ -61,13 +63,35 @@ class People extends Component {
     });
   };
 
+  onSearchStringChange = searchString => {
+    this.setState({ searchString });
+  };
+
+  getSearchedPeople = () => {
+    const { people, searchString } = this.state;
+
+    // if there is no search string return everyone
+    if (searchString === "") {
+      return people;
+    }
+
+    // filter the people
+    return people.filter(person =>
+      person.name.toLowerCase().includes(searchString)
+    );
+  };
+
   render() {
-    const { people } = this.state;
+    const { searchString } = this.state;
+    const people = this.getSearchedPeople();
 
     return (
       <Fragment>
         <h2> People </h2>
-
+        <PeopleSearch
+          searchString={searchString}
+          onSearchStringChange={this.onSearchStringChange}
+        />
         <ul className="people">
           {people.map(p => (
             <Person
