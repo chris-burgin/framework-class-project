@@ -77,7 +77,7 @@ class People extends Component {
 
     // filter the people
     return people.filter(person =>
-      person.name.toLowerCase().includes(searchString)
+      person.name.toLowerCase().includes(searchString.toLowerCase())
     );
   };
 
