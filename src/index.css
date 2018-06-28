@@ -1,9 +1,14 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 10px;
   font-family: sans-serif;
 }
+.people {
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+}
 
-.red {
-  color: red;
+.people .person {
+  padding-bottom: 10px;
 }
