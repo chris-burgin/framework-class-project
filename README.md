@@ -2,6 +2,4 @@
 
 ## Reset Your Project
 
-## Using Components
-
-## Updating State
+## Using Fetch
