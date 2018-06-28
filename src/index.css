@@ -4,11 +4,16 @@ body {
   font-family: sans-serif;
 }
 .people {
-  margin: 0;
-  padding: 10px;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
 .people .person {
   padding-bottom: 10px;
+}
+
+.peopleAdd input {
+  margin-right: 20px;
 }

@@ -6,12 +6,18 @@ class Person extends Component {
     this.props.updatePersonName(id, event.target.value);
   };
 
+  removeUser = () => {
+    const { id } = this.props;
+    this.props.removeUser(id);
+  };
+
   render() {
     const { name } = this.props;
 
     return (
-      <li>
+      <li className="person">
         <input type="text" value={name} onChange={this.onNameChange} />
+        <button onClick={this.removeUser}> Remove </button>
       </li>
     );
   }
