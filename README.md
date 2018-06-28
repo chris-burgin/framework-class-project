@@ -2,4 +2,6 @@
 
 ## Reset Your Project
 
-## Using Fetch
+## Adding People
+
+## Removing People
