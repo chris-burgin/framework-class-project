@@ -18,3 +18,30 @@ https://nodejs.org/en/
 https://reactjs.org/
 
 ## Hello World Example
+
+### Project Layout
+```
+node_modules/
+public/
+src/
+  App.js
+  index.css
+  index.js
+  registerServiceWorker.js
+package.json
+README.md
+```
+
+### Index.js
+This is what "mounts our React application to the DOM. It uses an ID, `#root` on an element that you can find in `public/index.html`.
+
+### App.js
+This is the "component" that gets mounted inside of `index.js`. This is going to be our entrypoint for our application that everything else will extend off of.
+
+### JSX
+React does not use standard HTML, it uses something called JSX. It may seem a bit weird at first, but you will get the hang of it quickly.
+
+https://reactjs.org/docs/introducing-jsx.html
+
+### Make it say "Hi"
+.... in class
